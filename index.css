@@ -354,14 +354,14 @@ body
      .about-us
      {
         text-align: center;
-        font-size: 30px;
+        font-size: 1.8em;
         padding-bottom: 10px;
      }
 
      .about-us-content
      {
         text-align: justify;
-        font-size: 13px;
+        font-size: 0.8em;
         font-weight: 400;
      }
 
@@ -392,13 +392,13 @@ body
 
     .robocon-section h1{
         text-align: center;
-        font-size: 35px;
+        font-size: 1.8em;
         font-weight: bolder;
         padding: 15px 0px;
     }
 
     .robocon-section p{
-        font-size: 13px;
+        font-size: 0.8em;
         text-align: justify;
     }
 
