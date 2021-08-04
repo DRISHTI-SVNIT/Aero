@@ -167,8 +167,24 @@ body
     font-size: 1.3em;
     padding: 10px 35px;
     background-color: rgb(253, 69, 23);
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 10px;
+    transition: 0.05s ease;
+}
+
+.desc a:hover{
+    border: 2px solid rgb(253, 69, 23);
+    background-color: rgb(255, 252, 247);
+    color:rgb(253, 69, 23);
+    transition: 0.15s ease;
+}
+
+.mars-plane{
+    width: 100%;
+}
+
+.mars-plane img{
+    width: 100%;
 }
 
 
@@ -222,12 +238,12 @@ body
     
     .title h1{
         font-weight: bolder;
-        font-size: 5em;
+        font-size: 3.5em;
     }
     
     .title h3{
-        margin-top: -0.5em;
-        font-size: 1.5em;
+        margin-top: 0em;
+        font-size: 1.2em;
         color: rgb(253, 69, 23);
     }
     
@@ -248,16 +264,11 @@ body
     
     .desc p{
         text-align: justify;
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
     
     .desc a{
-        text-decoration: none;
-        color: white;
-        font-size: 1.1em;
-        padding: 8px 25px;
-        background-color: rgb(253, 69, 23);
-        border: 1px solid transparent;
-        border-radius: 10px;
+        font-size: 0.9em;
+        padding: 7px 18px;
     }
 }
