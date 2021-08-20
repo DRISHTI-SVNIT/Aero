@@ -1,0 +1,274 @@
+/* custom fonts */
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('../webfonts/PlusJakartaSans/PlusJakartaSans-Regular.woff2') format('woff2'),
+         url('../webfonts/PlusJakartaSans/PlusJakartaSans-Regular.woff') format('woff')
+         url('../webfonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('../webfonts/PlusJakartaSans/PlusJakartaSans-Light.woff2') format('woff2'),
+         url('../webfonts/PlusJakartaSans/PlusJakartaSans-Light.woff') format('woff')
+         url('../webfonts/PlusJakartaSans/PlusJakartaSans-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('../webfonts/PlusJakartaSans/PlusJakartaSans-Medium.woff2') format('woff2'),
+         url('../webfonts/PlusJakartaSans/PlusJakartaSans-Medium.woff') format('woff')
+         url('../webfonts/PlusJakartaSans/PlusJakartaSans-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('../webfonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2') format('woff2'),
+         url('../webfonts/PlusJakartaSans/PlusJakartaSans-Bold.woff') format('woff')
+         url('../webfonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('../webfonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+         url('../webfonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.woff') format('woff')
+         url('../webfonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+
+
+
+
+/* start */
+
+
+
+
+
+html
+{
+    overflow-x: hidden;
+}
+.navbar-nav{
+    /* font-family: Arial; */
+    font-size: 20px;
+}
+
+.nav-link{
+    color: black;
+}
+
+.svnit_photo {
+   width:150px;
+   height: auto;
+   margin-left: 10px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+.v1 {
+    height: 70px;
+    border-left: 1px solid white;
+    position: relative;
+    top : 0;
+    margin-left: 0%;
+}
+.v2 {
+    height: 70px;
+    border-left: 1px solid black;
+    position: relative;
+    top : 0;
+    margin-left: 0%;
+}
+
+.nit_photo{
+    width:80px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body
+{
+    font-family: 'PlusJakartaSans', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.main-nav{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.competitions{
+    width: 100%;
+}
+
+.comp-box{
+    margin: 3%;
+    border-radius: 20px;
+    background-color: rgb(255, 252, 247);
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+
+.title{
+    padding: 35px;
+}
+
+.title h1{
+    font-weight: bolder;
+    font-size: 4em;
+}
+
+.title h3{
+    margin-top: -0.5em;
+    font-size: 1.8em;
+    color: rgb(253, 69, 23);
+}
+
+.comp-img{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 35px 10px 0px 35px;
+}
+
+.comp-img .image img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.desc{
+    padding: 0px 35px 45px 35px;
+}
+
+.desc p{
+    font-size: 1.2em;
+}
+
+.desc a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    padding: 10px 35px;
+    background-color: rgb(253, 69, 23);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.05s ease;
+}
+
+.desc a:hover{
+    border: 2px solid rgb(253, 69, 23);
+    background-color: rgb(255, 252, 247);
+    color:rgb(253, 69, 23);
+    transition: 0.15s ease;
+}
+
+.mars-plane{
+    width: 100%;
+}
+
+.mars-plane img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media (max-width:640px){
+    .svnit_photo {
+       width:130px;
+       height: auto;
+       margin-left: 0px;
+       margin-top: 0px;
+       margin-bottom: 0px;
+    }
+
+    .v1 {
+        height: 50px;
+    }
+    .v2 {
+        height: 50px;
+    }
+
+    .nit_photo{
+        width:50px;
+        height: auto;
+        margin-left: 7px;
+        margin-right: 3px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .competitions{
+        width: 100%;
+    }
+    
+    .comp-box{
+        margin: 0%;
+        border-radius: 0px;
+        background-color: white;
+        box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.0);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .title{
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .title h1{
+        font-weight: bolder;
+        font-size: 3.5em;
+    }
+    
+    .title h3{
+        margin-top: 0em;
+        font-size: 1.2em;
+        color: rgb(253, 69, 23);
+    }
+    
+    .comp-img{
+        grid-row-start: 2;
+        padding: 0px 40px 10px 40px;
+    }
+    
+    .comp-img .image img{
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    }
+    
+    .desc{
+        padding: 30px 40px 45px 40px;
+    }
+    
+    .desc p{
+        text-align: justify;
+        font-size: 0.7em;
+    }
+    
+    .desc a{
+        font-size: 0.9em;
+        padding: 7px 18px;
+    }
+}

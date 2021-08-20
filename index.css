@@ -1,506 +1,463 @@
-html {
+/* custom fonts */
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('webfonts/PlusJakartaSans/PlusJakartaSans-Regular.woff2') format('woff2'),
+         url('webfonts/PlusJakartaSans/PlusJakartaSans-Regular.woff') format('woff')
+         url('webfonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('webfonts/PlusJakartaSans/PlusJakartaSans-Light.woff2') format('woff2'),
+         url('webfonts/PlusJakartaSans/PlusJakartaSans-Light.woff') format('woff')
+         url('webfonts/PlusJakartaSans/PlusJakartaSans-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('webfonts/PlusJakartaSans/PlusJakartaSans-Medium.woff2') format('woff2'),
+         url('webfonts/PlusJakartaSans/PlusJakartaSans-Medium.woff') format('woff')
+         url('webfonts/PlusJakartaSans/PlusJakartaSans-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('webfonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2') format('woff2'),
+         url('webfonts/PlusJakartaSans/PlusJakartaSans-Bold.woff') format('woff')
+         url('webfonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('webfonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+         url('webfonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.woff') format('woff')
+         url('webfonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+
+
+
+
+/* start */
+
+
+
+
+
+html
+{
     overflow-x: hidden;
 }
-
-body {
-    overflow-x: hidden;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.bgr {
-    background-image:url(images/aero1.jpg);
-    background-color: rgba(255,255,255,0.6);
-    background-blend-mode: lighten;
-    background-repeat: no-repeat;
-    background-size:100% 100%; 
-    max-width: 100%; 
-    height: auto;
-}
-
-.drishti {
-    padding-top: 30px;
-    margin-top: 15px; 
-    margin-left: auto;
-    margin-right: auto; 
-    display: inline-block;
-    max-width: fit-content;
-    height: 200px;
-    width: 300px;
-}
-
-.about-heading {
-    text-align: left;
-}
-
 .navbar-nav{
-    /* font-family: Bookman Header; */
-    font-size: 25px;
-}
-.con{
-    border:2px solid transparent;
-     padding-left: 50px;
-     padding-right: 50px;
- }
-
- .cont {
-     background-color: rgba(0, 0, 0, 0.3);
-     margin-left: 5%;
-     margin-right: 5%;
-     margin-top: 2%;
-     margin-bottom: 5%;
-     color:black;
- }
-
-.h {
-    text-align: center;
-    font-size: 60px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    /* padding-top: 40px; */
+    /* font-family: Arial; */
+    font-size: 20px;
 }
 
- .contact{
-     padding-left: 90px;
-     padding-right: 90px;
- }
-
-.dropdown-item  a {
-    border-style: ridge;
-    border-color: black;
+.svnit_photo{
+   width:150px;
+   height: auto;
+   margin-left: 10px;
+   margin-top: 0px;
+   margin-bottom: 0px;
 }
 
-.dropdown-item:hover {
-    background-color: rgb(100,100,100);
+.v1 {
+    height: 70px;
+    border-left: 1px solid white;
+    position: relative;
+    top : 0;
+    margin-left: 0%;
+}
+.v2 {
+    height: 70px;
+    border-left: 1px solid black;
+    position: relative;
+    top : 0;
+    margin-left: 0%;
 }
 
-.carousel-item{
-     padding-right: 0px;
-     padding-left: 0px;
- }
- .hello1{
-    height: 700px;
-     width: 1250;
- }
- .hello2{
-    height: 700px;
-     width: 500px;
- }
- .hello3{
-    height: 600px;
-     width: 1300;
- }
-.hello5 {
-    height: 500px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-   
-}
-.hello6 {
-    height: 700px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.hello7 {
-    height: 600px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    /* width: 25%; */
-}
-.hello8 {
-    height: 600px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    /* width: 25%; */
-}
- h3 {
-     /* font-family: Bookman Header; */
-     font-style: bold;
- }
-
- div.polaroid {
-    width: 80%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-  }
-  
-  div.text_container {
-    text-align: center;
-    padding: 10px 20px;
-    background-color: teal;
-    color: white;
-  }
-
-  div.text_container a {
-        color: white;
-  }
-
-  div.transbox {
-    margin: 5%;
-    margin-top: 0;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-    height: 700px;
-  }
-
- .a {
-     height: 5px;
-     background-color: black;
-     margin-right: 10%;
-     margin-left: 10%;
- }
-
- 
-#menu {
-    margin-right: 5%;
-}
-
-#background_image {
-    width : 100%;
-    position : absolute;
-    top: 0;
-    left: 0;
-}
-
-.civil_photo {
-    height:auto;
-    width: 70%; 
-    margin-left: 5%;
-}
-
-.svnit_photo {
-    /* height:100px; */
-    width:180px;
+.nit_photo{
+    width:80px;
     height: auto;
-    margin-left: 5%;
+    margin-left: 30px;
+    margin-right: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.tensegrity_photo {
-    display: block;
-     margin-left: auto;
-     margin-right: auto; 
-     width: 25%; 
-     height: 25%;
+body
+{
+    font-family: 'PlusJakartaSans', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-.bridge_photo {
-    display: block; 
-    margin-left: auto;
-    margin-right: auto; 
-    width: 30%; 
-    height: 30%;
+
+
+
+
+
+
+
+
+.main-div{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/aero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: 0px -170px 180px 50px rgba(0, 0, 0, 0.9) inset, 0px 70px 90px 20px rgba(0, 0, 0, 0.7) inset;
 }
 
-.truss_photo {
-    display: block; 
-    margin-left: auto;
-    margin-right: auto; 
-    width: 50%;
+.robocon-image{
+    display: flex;
+    justify-content: center;
 }
 
-.main{
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    /* padding-top: 2%; */
-    /* padding-bottom: 2%; */
+.robocon-image .robocon-title{
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 30px black;
 }
 
-.main_photo {
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding-top: 2%;
-    padding-bottom: 2%;
+.robocon-image .robocon-title h3{
+    font-weight: bold;
+    letter-spacing: 8px;
+    font-size: 40px;
+    padding-bottom: 0;
 }
 
-.bottom_location .rounded-social-buttons {
-    margin-right: 10px;
-}
-@media(max-width:1250px) {
-    .bgr {
-        background-size: 200% 100%;
-        background-position : center;
-    }
-
-    .main {
-        width: 60%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        padding-top: 2%;
-    }
-
-    .hello1 {
-        height: 400px;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-
-    .hello2 {
-        height: 400px;
-        width: 400px;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-
-    .hello3 {
-        height: 400px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-
-    .hello5 {
-        width: 50%;
-        height: 350px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .hello6 {
-        width: 40%;
-        height: auto;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .hello7 {
-        height : 500px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .hello8 {
-        height : 500px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
+.robocon-image .robocon-title h1{
+    font-weight: bolder;
+    letter-spacing: 10px;
+    font-size: 160px;
+    padding-bottom: 50px;
 }
 
-@media (max-width : 850.98px) {
-    .bgr {
-        background-size: 250% 100%;
-        background-position : center;
-    }
-    
-    .main {
-        width: 70%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        padding-top: 2%;
-    }
-
-    .hello1 {
-        height: 400px;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-
-    .hello2 {
-        height: 400px;
-        width: 400px;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-
-    .hello3 {
-        height: 350px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .hello5 {
-        width: 70%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .hello6 {
-        width: 50%;
-        height: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .hello7 {
-        height : 400px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        /* margin-top: 50px;
-        margin-bottom: 50px; */
-    }
-    .hello8 {
-        height : 400px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        /* margin-top: 50px;
-        margin-bottom: 50px; */
-    }
+.about-section{
+    display: flex;
 }
 
- @media (max-width: 600.98px) { 
-     .con{
-         border:2px solid transparent;
-     padding-left: 20px;
-     padding-right: 10px;
-     }
+.write-up-about{
+    width: 65%;
+    padding: 20px 30px 30px 70px;
+}
+
+ .about-us
+ {
+    text-align: left;
+    font-size: 50px;
+    padding-bottom: 10px;
  }
- @media (max-width: 600.98px) { 
-     .hello1{
-         height: 250px;
-         padding-right: 5%;
-         padding-left: 5%;
-         
-     }
- }
- @media (max-width: 600.98px) { 
-     .hello2{
-         height: 250px;
-     }
- }
- @media (max-width: 600.98px) { 
-     .hello3{
-         height: 250px;
-     }
- }
- @media (max-width: 600.98px) { 
-    .hello4{
-        padding-top: 4px;
-        text-align:center;
-    }
-    @media (max-width: 600.98px) { 
-        .hello5{
-            padding-top: 4px;
-            text-align:center;
-        }
-        @media (max-width: 600.98px) { 
-            .hello6{
-                padding-top: 4px;
-                text-align:center;
-            }
-            @media (max-width: 600.98px) { 
-                .hello7{
-                    text-align:center;
-                }
 
-@media (max-width : 600.98px) {
-    .con {
-        margin-right: 5%;
+ .about-us-content
+ {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+ }
+
+.about-drishti-image{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.robocon-section{
+    width: 100%;
+    padding: 40px 150px 40px 150px;
+    background-color: #202328;
+    color: #f8fafd;
+    background-image: url(images/quad.jpg);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-shadow: 0px 0px 30px rba(0,0,0,0.5);
+}
+
+.robocon-section h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+.robocon-section p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+
+.project-title{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.project-title h1{
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.projects{
+    width: 90%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-box{
+    width: 80%;
+    margin: 10%;
+    position: relative;
+}
+
+.project-box img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-box h2{
+    position: absolute;
+    bottom: 4px;
+    left: 20px;
+    color: white;
+    font-size: 2em;
+    text-shadow: 0 0 25px black;
+}
+
+.project-box a span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 1;
+    background-color: black;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.project-box a span:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:640px){
+    .v1 {
+        height: 50px;
+    }
+    .v2 {
+        height: 50px;
     }
 
-    .bgr {
-        background-size: 400% 100%;
-    }
-
-    .drishti {
-        padding-top: 0px;
+    .nit_photo{
+        width:50px;
+        height: auto;
+        margin-left: 7px;
+        margin-right: 3px;
         margin-top: 0px;
+        margin-bottom: 0px;
     }
 
-    .about-heading {
+    .svnit_photo{
+       width:120px;
+       height: auto;
+       margin-left: 0px;
+       margin-top: 0px;
+       margin-bottom: 0px;
+    }
+
+    .main-div{
+        width: 100%;
+        height: auto;
+        background-image: none;
+        background-color: darkgray;
+    }
+
+    .robocon-image{
+        display: flex;
+        justify-content: center;
+        height: 45vh;
+        background-image: url(images/aero.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        box-shadow: 0px -40px 60px 10px rgba(0, 0, 0, 0.9) inset, 0px 70px 90px 20px rgba(0, 0, 0, 0.7) inset;
+
+    }
+
+    .robocon-image .robocon-title{
+        top: 28vh;
+        position: relative;
         text-align: center;
-    }
-    .svnit_photo {
-        margin-left: 0%;
-        /* height: 75px; */
-        width: 130px;
-        height: auto;
-    }
-    .main_photo {
-        height: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        padding-top: 2%;
-        padding-bottom: 2%;
+        color: #fff;
+        text-shadow: 0 0 30px black;
     }
 
-    .main {
-        width: 90%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        padding-top: 2%;
+    .robocon-image .robocon-title h3{
+        font-weight: bold;
+        letter-spacing: 5px;
+        font-size: 20px;
+        padding-bottom: 0;
     }
 
-
-    .h {
-        font-size: 40px;
-    }
-    .hello1 {
-        height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .robocon-image .robocon-title h1{
+        font-weight: bolder;
+        letter-spacing: 7px;
+        font-size: 60px;
+        padding-bottom: 0px;
     }
 
-    .hello2 {
-        height: 250px;
-        width: 200px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .about-section{
+        display: grid;
     }
 
-    .hello3 {
-        height: 250px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
+    .write-up-about{
+        width: 100%;
+        padding: 0px 30px 10px 30px;
     }
 
-    .hello5 {
-        width: 90%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        
+     .about-us
+     {
+        text-align: center;
+        font-size: 1.8em;
+        padding-bottom: 10px;
+     }
+
+     .about-us-content
+     {
+        text-align: justify;
+        font-size: 0.8em;
+        font-weight: 400;
+     }
+
+    .about-drishti-image{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .hello6 {
-        height:auto;
-        width: 80%;
-        margin-bottom: 0px;
-        margin-top: 0px;
+
+    .about-drishti-image img{
+        width: 70%;
     }
-    .hello7 {
-        height:350px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        /* margin-bottom: 50px;
-        margin-top: 50px; */
+
+    .robocon-section{
+        width: 100%;
+        padding: 40px 30px;
+        background-color: #202328;
+        color: #f8fafd;
+        background-image: url(images/quad.jpg);
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        text-shadow: 0px 0px 30px rba(0,0,0,0.5);
     }
-    .hello8 {
-        height:350px;
-        width: 90%;
-        margin-top: 0px;
-        margin-bottom: 0px;
+
+    .robocon-section h1{
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: bolder;
+        padding: 15px 0px;
     }
-     .heading {
-        font-size: 35px;
+
+    .robocon-section p{
+        font-size: 0.8em;
+        text-align: justify;
+    }
+
+    .project-title{
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
     
-}
-
-
-@media(max-width : 380px) {
-    .main {
-        width: 80%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        padding-top: 2%;
-        margin-bottom: 0%;
+    .project-title h1{
+        font-weight: bold;
+        font-size: 3em;
     }
+    
+    .projects{
+        width: 96%;
+        margin: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .project-box{
+        width: 90%;
+        margin: 5%;
+        position: relative;
+    }
+    
+    .project-box img{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .project-box h2{
+        position: absolute;
+        bottom: 2px;
+        left: 8px;
+        color: white;
+        font-size: 1em;
+        text-shadow: 0 0 15px black;
+    }
+    
+    .project-box a span{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        z-index: 1;
+        background-color: black;
+        opacity: 0;
+        border-radius: 10px;
+        transition: 0.1s;
+    }
+    
+    .project-box a span:hover{
+        opacity: 0.5;
+        transition: 0.2s;
+    }
+
 }
